@@ -16,7 +16,7 @@ public class MongoDBquery {
     public static void main(String[] args) {
         MongoClient mongoClient= new MongoClient();// localhost use no need to declare  URI
         MongoDatabase test= mongoClient.getDatabase("test");
-        MongoCollection dict = test.getCollection("dict");
+        MongoCollection<Document> dict = test.getCollection("dict");
         while(true) {
             Scanner scan = new Scanner(System.in);
             System.out.print("Word (type C to break):   ");
@@ -30,7 +30,7 @@ public class MongoDBquery {
                 Document returnvalue = it.next();
                 Object pronun = returnvalue.get("Pronun");
                 System.out.println("Pronunciation:    " + pronun);
-                Collection meaning = (Collection) returnvalue.get("Meaning");
+                Collection<Document> meaning = (Collection<Document>) returnvalue.get("Meaning");
                 for (Object s : meaning) {
                     System.out.println(s);
                 }
