@@ -8,8 +8,8 @@ MongoDB 4.2.3 \
 Run the LingoesLd2Reader main, get the OUTPUT file \
 
 //Structure of OUTPUT file: \
-Word(key) = @Word(value) / Pronunciation / - Meaning = Example in English + Example in Vietnamese \\
------------|--------------------------------------This can happen multiple times-----------------|
+Word(key) = @Word(value) / Pronunciation / - Meaning = Example in English + Example in Vietnamese \
+-----------|--------------------------------------This can happen multiple times-----------------| \
 
 //Paste the OUTPUT file path to RegexToHash, line 94  \
 RegexToHash:\
@@ -17,7 +17,7 @@ store the dictionary in 2 HashMapValuedHashSet class (to remove redundant and du
 
 
 //Paste the OUTPUT file path to MongoDBinsert, line 25 \
-Run the MongoDBinsert main
-Then run the MongoDBquery main
-BETTER REGEX to capture pronunciation and handle meaning properly
-COLLECTION (MongoDB) provided text index with better query perfomance
+Run the MongoDBinsert main \
+Then run the MongoDBquery main\
+BETTER REGEX to capture pronunciation and handle meaning properly\
+COLLECTION (MongoDB) provided text index with better query perfomance\
