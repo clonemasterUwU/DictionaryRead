@@ -7,7 +7,6 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import org.bson.Document;
 
-import javax.print.Doc;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Scanner;
